@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>New ThinkJS Application</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/www4/css/yuntuo_stu_upload.css">
+</head>
+
+<body>
+
+  <div class="box">导入神州通联excel数据：<input type="file" name="file" id="file"></div>
+  <div class="box">对比excel数据：<input type="file" name="compare_file" id="compare_file"></div>
+
+
+  对比出现重复的数据：
+  <table class="table compare-table">
+    <thead>
+      <tr>
+        <td>id</td>
+        <td>姓名</td>
+        <td>年龄</td>
+      </tr>
+    </thead>
+    <tbody class="compareTableBody">
+
+    </tbody>
+  </table>
+
+
+  神州通联数据：
+  <table class="table">
+    <thead>
+      <tr>
+        <td>id</td>
+        <td>姓名</td>
+        <td>年龄</td>
+      </tr>
+    </thead>
+    <tbody class="oldTableBody">
+      <% for(let i = 0; i < list.length; i++){ %>
+      <tr>
+        <td><%=list[i].id %></td>
+        <td><%=list[i].name %></td>
+        <td><%=list[i].age %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    let $oldTableBody = document.querySelector('.oldTableBody')
+    let $compareTableBody = document.querySelector('.compareTableBody')
+    document.querySelector('#file').addEventListener('change', function () {
+      let xhr = new XMLHttpRequest()
+      xhr.open('post', '/api/v4/yuntuo_stu_excel/upload')
+      let formData = new FormData()
+      formData.append('file', document.querySelector('#file').files[0])
+      xhr.send(formData)
+      xhr.onreadystatechange = function (){
+        if(xhr.readyState === 4 && xhr.status === 200){
+          let data = JSON.parse(xhr.response)
+          if(data.errcode === 0){
+            data = data.data
+            let html = ''
+            data.forEach(item => {
+              html += `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.age}</td></tr>`
+            })
+            $oldTableBody.innerHTML = html
+          }
+        }
+      }
+    })
+
+    document.querySelector('#compare_file').addEventListener('change', function () {
+      let xhr = new XMLHttpRequest()
+      xhr.open('post', '/api/v4/yuntuo_stu_excel/compare')
+      let formData = new FormData()
+      formData.append('file', document.querySelector('#compare_file').files[0])
+      xhr.send(formData)
+      xhr.onreadystatechange = function (){
+        if(xhr.readyState === 4 && xhr.status === 200){
+          let data = JSON.parse(xhr.response)
+          if(data.errcode === 0){
+            data = data.data
+            let html = ''
+            data.forEach(item => {
+              html += `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.age}</td></tr>`
+            })
+            $compareTableBody.innerHTML = html
+          }
+        }
+      }
+    })
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "apps": [{
+    "name": "cart4",
+    "script": "production.js",
+    "exec_mode": "fork",
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74d5f063-34b7-4a79-92d8-61f9d8a7942f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/mobilemall/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mobilemall/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobilemall/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/mobilemall/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobilemall/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobilemall/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobilemall/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobilemall/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mobilemall/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobilemall/src/views/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobilemall/src/views/Home.vue" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mobilemall" />
+  </component>
+  <component name="ProjectId" id="1aObGzpOEX7QpxUVjaq9nI0FpUm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mobilemall/src/assets/img/lazyLoad" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\stwd\Desktop\mobileMall\mobilemall\src\assets\img\lazyLoad" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74d5f063-34b7-4a79-92d8-61f9d8a7942f" name="Default Changelist" comment="" />
+      <created>1586609495392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586609495392</updated>
+      <workItem from="1586609496660" duration="154000" />
+      <workItem from="1586609786846" duration="15855000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
