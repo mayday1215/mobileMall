@@ -26,6 +26,9 @@
     },
     created() {
       this.active = this.index
+    },
+    computed:{
+
     }
   }
 </script>

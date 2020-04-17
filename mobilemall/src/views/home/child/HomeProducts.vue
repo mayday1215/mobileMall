@@ -49,6 +49,8 @@
         let scrollTop = this.$refs.product.scrollTop
         let clientHeight = this.$refs.product.clientHeight
         let scrollHeight = this.$refs.product.scrollHeight
+        this.$emit("scroll",scrollTop)
+
         if (scrollTop + clientHeight >= scrollHeight-1){
           this.page++
           if (this.page > this.totalPage){
@@ -121,4 +123,5 @@
         font-size: 13px;
         color: #ff5500;
     }
+
 </style>

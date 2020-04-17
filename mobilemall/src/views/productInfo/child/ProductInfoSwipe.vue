@@ -24,7 +24,7 @@
 
 <style scoped>
     .swipe {
-        margin-top: 47px;
+        /*margin-top: 47px;*/
     }
 
     .swipe img {

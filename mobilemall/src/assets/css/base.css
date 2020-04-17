@@ -22,3 +22,6 @@ ul, li {
 .nav-bar-border-bottom{
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
+.tab-bar-bor-top{
+    border-top: 1px solid rgba(100,100,100,.2);
+}
